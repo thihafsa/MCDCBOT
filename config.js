@@ -76,8 +76,8 @@ module.exports = {
   commands: {
     slashCommands: true,
     prefixCommands: {
-      enabled: false,
-      prefix: '!', 
+      enabled: true,
+      prefix: '.', 
     },
     language: 'id', 
     ip: {
