@@ -76,13 +76,13 @@ module.exports = {
   commands: {
     slashCommands: true,
     prefixCommands: {
-      enabled: true,
+      enabled: false,
       prefix: '!', 
     },
     language: 'id', 
     ip: {
       enabled: true, 
-      alias: ['ip-address'], 
+      alias: ['ip-address', 'ip'],
     },
     vote: {
       enabled: true, 
@@ -90,7 +90,7 @@ module.exports = {
     },
     version: {
       enabled: true, 
-      alias: [], 
+      alias: ['v', 'version'],
     },
     players: {
       enabled: true, 
