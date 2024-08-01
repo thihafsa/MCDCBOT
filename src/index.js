@@ -8,10 +8,11 @@ const fs = require('fs')
 const { CommandKit } = require('commandkit')
 const process = require('node:process')
 const json5 = require('json5')
+const __path = process.cwd();
 
 
 
-const fileContents = fs.readFileSync(`./translation/${config.commands.language}.json5`, 'utf8')
+const fileContents = fs.readFileSync(__path +`/translation/${config.commands.language}.json5`, 'utf8')
 embedReadData = json5.parse(fileContents)
 
 const client = new Client({
